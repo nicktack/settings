@@ -1,0 +1,17 @@
+[user]
+	email = ntack1@gmail.com
+	name = nick
+[push]
+	default = simple
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
+[alias]
+	co = checkout
+	st = status
+	ci = commit
+	br = branch

@@ -19,15 +19,13 @@ for filepath in $HOME/settings/files/*; do
 done
 
 # append to .bashrc
-#cat <<alldone >> $HOME/.bashrc
 INCLUDE="
 
 # ntack was here
 # include my .bashrc additions if it exists
-if [ -f $HOME/settings/.bashrc ]; then
-    . $HOME/settings/.bashrc
+if [ -f $HOME/settings/files/.bashrc_addons ]; then
+    . $HOME/settings/files/.bashrc_addons
 fi
 "
 grep -qxF '# ntack was here' $HOME/.bashrc || echo "$INCLUDE" >> $HOME/.bashrc
-#alldone
 
